@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>C_COURBE</class>
+ <widget class="QMainWindow" name="C_COURBE">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>752</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Courbe</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QwtPlot" name="Le_graphe">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>400</width>
+      <height>200</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QwtSlider" name="Le_Slider_1">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>50</y>
+      <width>60</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="upperBound">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="totalSteps">
+     <UInt>10</UInt>
+    </property>
+    <property name="singleSteps">
+     <UInt>1</UInt>
+    </property>
+   </widget>
+   <widget class="QwtSlider" name="Le_slider_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>60</y>
+      <width>60</width>
+      <height>250</height>
+     </rect>
+    </property>
+    <property name="upperBound">
+     <double>1.000000000000000</double>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>752</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Fichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <addaction name="action_Quitter"/>
+   </widget>
+   <addaction name="menu_Fichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Quitter">
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QwtSlider</class>
+   <extends>QWidget</extends>
+   <header>qwt_slider.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_Quitter</sender>
+   <signal>triggered()</signal>
+   <receiver>C_COURBE</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Le_Slider_1</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>C_COURBE</receiver>
+   <slot>slot_coef(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Le_slider_2</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>C_COURBE</receiver>
+   <slot>slot_coef(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>664</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>433</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_coef(double)</slot>
+  <slot>slot_ajoute(double)</slot>
+ </slots>
+</ui>

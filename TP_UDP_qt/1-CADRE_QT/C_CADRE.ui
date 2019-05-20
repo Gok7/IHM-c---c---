@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>C_CADRE</class>
+ <widget class="QMainWindow" name="C_CADRE">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>TEST_QT_CADRE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../Counter-Strike Source-vrai/game.ico</normaloff>../../../../Counter-Strike Source-vrai/game.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="Le_Slider">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>30</y>
+      <width>361</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="La_Barre_Progression">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>91</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>90</y>
+      <width>181</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="text">
+     <string>Bouton</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../Downloads/star-wars-pulp-fiction-boba-fett-darth-vader-pulp-fiction-shadow-art-star-wars-starwars.jpg</normaloff>../../../../../Downloads/star-wars-pulp-fiction-boba-fett-darth-vader-pulp-fiction-shadow-art-star-wars-starwars.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>112</width>
+      <height>72</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="Liste_Info">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>250</y>
+      <width>251</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="La_Barre_Progression_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>190</y>
+      <width>91</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Le_Slider_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>70</y>
+      <width>361</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>576</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Fichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <addaction name="action_Test"/>
+    <addaction name="separator"/>
+    <addaction name="action_Decimal"/>
+    <addaction name="action_Oct"/>
+    <addaction name="action_Hexa"/>
+    <addaction name="action_Binaire"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quitter"/>
+   </widget>
+   <addaction name="menu_Fichier"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Quitter">
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+  </action>
+  <action name="action_Test">
+   <property name="text">
+    <string>&amp;Test</string>
+   </property>
+  </action>
+  <action name="action_Binaire">
+   <property name="text">
+    <string>&amp;Binaire</string>
+   </property>
+  </action>
+  <action name="action_Hexa">
+   <property name="text">
+    <string>&amp;Hexa</string>
+   </property>
+  </action>
+  <action name="action_Oct">
+   <property name="text">
+    <string>&amp;Oct</string>
+   </property>
+  </action>
+  <action name="action_Decimal">
+   <property name="text">
+    <string>&amp;Decimal</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_Quitter</sender>
+   <signal>triggered()</signal>
+   <receiver>C_CADRE</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Le_Slider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>La_Barre_Progression</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>65</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Le_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>La_Barre_Progression</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>95</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>C_CADRE</receiver>
+   <slot>Slot_Info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Le_Slider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>C_CADRE</receiver>
+   <slot>Slot_Info_1(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Le_Slider_2</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>La_Barre_Progression_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>306</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Le_Slider_2</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>C_CADRE</receiver>
+   <slot>Slot_Info_2(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Slot_Info()</slot>
+  <slot>Slot_Info_1(int)</slot>
+  <slot>Slot_Info_2(int)</slot>
+ </slots>
+</ui>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>C_DATA.cpp</itemPath>
+      <itemPath>C_DATA.h</itemPath>
+      <itemPath>C_EMETTEUR_UDP.cpp</itemPath>
+      <itemPath>C_EMETTEUR_UDP.h</itemPath>
+      <itemPath>C_SECTION_CRITIQUE.cpp</itemPath>
+      <itemPath>C_SECTION_CRITIQUE.h</itemPath>
+      <itemPath>C_THREAD.cpp</itemPath>
+      <itemPath>C_THREAD.h</itemPath>
+      <itemPath>DEFINE.h</itemPath>
+      <itemPath>NS_NETWORK.cpp</itemPath>
+      <itemPath>NS_NETWORK.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>resource.h</itemPath>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>boite.res</linkerLibFileItem>
+            <linkerLibLibItem>wsock32</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="C_DATA.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_DATA.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_EMETTEUR_UDP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_EMETTEUR_UDP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_SECTION_CRITIQUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_SECTION_CRITIQUE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_THREAD.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_THREAD.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DEFINE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NS_NETWORK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NS_NETWORK.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>boite.res</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="C_DATA.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_DATA.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_EMETTEUR_UDP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_EMETTEUR_UDP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_SECTION_CRITIQUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_SECTION_CRITIQUE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_THREAD.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_THREAD.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DEFINE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NS_NETWORK.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NS_NETWORK.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
